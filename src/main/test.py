@@ -9,7 +9,6 @@ extra_files = ['./words','./info']
 
 def reload_test(s):
     print open('./info').read() 
-    print 'hahahhahha'
     
 if __name__ == '__main__':
     run_with_reloader(reload_test, extra_files ,'hello world')
