@@ -5,7 +5,7 @@ Created on 2018年1月23日
 @author: ministeryu
 '''
 from main.reloader import run_with_reloader
-extra_files = ['./words','./info']
+extra_files = ['./data/words','./data/info']
 
 def reload_test(s):
     print open('./info').read() 
