@@ -4,7 +4,7 @@ Created on 2018年1月23日
 
 @author: ministeryu
 '''
-from reloader import run_with_reloader
+from main.reloader import run_with_reloader
 extra_files = ['./words','./info']
 
 def reload_test(s):

@@ -115,7 +115,7 @@ class ReloaderLoop(object):
 
     def restart_with_reloader(self):
         """Spawn a new Python interpreter with the same arguments as this one,
-        but running the reloader thread.
+        but running the main thread.
         """
         _log('info', '* Starting with mode: %s' % self.name)
         while 1:
@@ -203,7 +203,7 @@ class WatchdogReloaderLoop(ReloaderLoop):
         reloader_name = Observer.__name__.lower()
         if reloader_name.endswith('observer'):
             reloader_name = reloader_name[:-8]
-        reloader_name += ' reloader'
+        reloader_name += ' main'
 
         self.name = reloader_name
 
